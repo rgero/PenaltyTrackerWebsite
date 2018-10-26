@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
-import logo from '../logo.svg';
-import '../styles/App.css';
 
 //Components
 import Header from './Header';
+import SearchHeader from './SearchHeader';
+import { SearchForm } from './SearchForm';
 
 class PenaltyTracker extends Component {
   render() {
     return (
       <div>
         <Header/>
+        <SearchHeader/>
+        <SearchForm/>
       </div>
     );
   }

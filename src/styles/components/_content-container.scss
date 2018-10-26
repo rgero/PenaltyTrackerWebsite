@@ -1,0 +1,22 @@
+.content-container {
+    margin: 0 auto;
+    padding: $s-size $m-size;
+    max-width: 80rem;
+}
+
+.content-container__title {
+    margin: 0;
+    font-weight: bold;
+    font-size: $l-size;
+}
+
+.content-navBar {
+    @extend .content-container;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $desktop-breakpoint) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,47 @@
+// This file contains a partial style.
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: $dark-gray;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: $m-size;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 2.2rem; //1rem = 16px by default. If you multiply it by 62.5% it'll be 10px
+}
+
+button {
+    cursor: pointer; // Sets the cursor type only when the button is active.
+}
+
+button:disabled {
+    cursor: default;
+}
+
+.navBar {
+    margin: 0 auto;
+    display:flex;
+    width:65%;
+    text-align:center;
+    justify-content: space-between;
+    padding-left:2.2rem;
+    padding-right:2.2rem;
+    padding-top: $s-size
+}
+
+.is-active{
+    font-weight:bold;
+}
+
+label {
+    font-weight:bold;
+}
+

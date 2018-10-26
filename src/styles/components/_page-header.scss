@@ -1,0 +1,21 @@
+.page-header {
+    background-color: $off-white;
+    margin-bottom: $l-size;
+    padding: $l-size;
+    text-align: center;
+}
+
+.page-header__actions {
+    margin-top: $m-size;
+}
+
+.page-header__title {
+    margin: 0;
+    span {
+        font-weight: bold;
+    }
+}
+
+.page-header__description{
+    font-size: $s-size;
+}
