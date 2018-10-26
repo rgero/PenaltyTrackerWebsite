@@ -11,17 +11,24 @@ export class SearchForm extends React.Component {
 
         //Functions
         this.onSubmit = this.onSubmit.bind(this);
+        this.onTextChange = this.onTextChange.bind(this);
         this.onTeamChange = this.onTeamChange.bind(this);
+        this.onSeasonChange = this.onSeasonChange.bind(this);
+        this.onLocationChange = this.onLocationChange.bind(this);
+        this.onDateChange = this.onDateChange.bind(this);
+        this.onCalendarFocusChanged = this.onCalendarFocusChanged.bind(this);
 
         this.state = {
             players: "",
             teams: [],
             opponents: [],
-            location: "",
+            location: "either",
             penalty: "",
             startDate: undefined,
             endDate: undefined,
-            season: ""
+            season: "Regular_18_19",
+            startCalendarFocused: false,
+            endCalendarFocused: false
         };
     };
     
@@ -48,7 +55,86 @@ export class SearchForm extends React.Component {
         }
     }
 
+    
+
+    onSeasonChange = (e) => {
+        var season = e.target.value;
+        this.setState({
+            season
+        })
+    }
+
+    onTextChange = (key) => (e) => {
+        var newValue = e.target.value;
+        switch(key){
+            case "type":
+                this.setState({
+                    name: newValue
+                });
+                break;
+            case "penalty":
+                this.setState({
+                    penalty: newValue
+                })
+                break;
+            default:
+                break;
+        }
+    }
+
+    onDateChange = (key) => (e) => {
+        switch(key){
+            case "start":
+                this.setState({
+                    startDate: e
+                })
+                break;
+            case "end":
+                this.setState({
+                    endDate: e
+                })
+                break;
+            default:
+                break;
+        }
+    }
+
+    onCalendarFocusChanged = (key) => (calendarFocused) => {
+        calendarFocused = calendarFocused["focused"]
+        switch(key){
+            case "start":
+                this.setState(() => ({startCalendarFocused: calendarFocused}));
+                break;
+            case "end":
+                this.setState(() => ({endCalendarFocused: calendarFocused}));
+                break;    
+            default:
+                break;
+        }
+    }
+
+
+    onLocationChange = (e) => {
+        var location = e.target.value;
+        this.setState(
+            {location}
+        )
+
+    }
+
     render() {
+
+        let seasonList = [
+            { id: "Regular_16_17", name: "2016-17 Regular"},
+            { id: "Playoffs_16_17", name: "2016-17 Playoffs"},
+            { id: "Regular_17_18", name: "2017-18 Regular"},
+            { id: "Playoffs_17_18", name: "2017-18 Playoffs"},
+            { id: "Regular_18_19", name: "2018-19 Regular"}
+        ]
+
+        let seasonOptions = seasonList.map((season)=> {
+            return <option key={season.id} value={season.id}>{season.name}</option>
+        })
 
         let teamList =  [   { id: "ANA", name: "Anaheim Ducks"},
                             { id: "ARI", name: "Arizona Coyotes"},
@@ -91,16 +177,76 @@ export class SearchForm extends React.Component {
             <div className="content-container">
                 <form className="form" onSubmit={this.onSubmit}>
                     <div className="form__input">
+                        <label>Season</label>
+                        <select className="select" onChange={this.onSeasonChange} value={this.state.season}>
+                            {seasonOptions}
+                        </select>
+                    </div>
+                    <div className="form__input">
+                        <label>Player Name</label>
+                        <input
+                            type="text"
+                            className="text-input"
+                            placeholder="Name"
+                            autoFocus
+                            value={this.state.name}
+                            onChange={this.onTextChange("name")}
+                        />
+                    </div>
+                    <div className="form__input">
+                        <label>Penalty</label>
+                        <input
+                            type="text"
+                            className="text-input"
+                            placeholder="Penalty"
+                            autoFocus
+                            value={this.state.penalty}
+                            onChange={this.onTextChange("penalty")}
+                        />
+                    </div>
+                    <div className="form__input">
                         <label>Player's Team</label>
-                        <select multiple className="select" onChange={this.onTeamChange("player")} value={this.state.teams}>
+                        <select multiple className="selectTeams" onChange={this.onTeamChange("player")} value={this.state.teams}>
                             {teamOptions}
                         </select>
                     </div>
                     <div className="form__input">
                         <label>Opponent Team</label>
-                        <select multiple className="select" onChange={this.onTeamChange("opponent")} value={this.state.opponents}>
+                        <select multiple className="selectTeams" onChange={this.onTeamChange("opponent")} value={this.state.opponents}>
                             {teamOptions}
                         </select>
+                    </div>
+                    <div className="form__input">
+                        <label>Location</label>
+                        <select className="select" onChange={this.onLocationChange} value={this.state.location}>
+                            <option key="home" value="home">Home</option>
+                            <option key="away" value="away">Away</option>
+                            <option key="either" value="either">Either</option>
+                        </select>
+                    </div>
+                    <div className="form__input">
+                        <label>Start Date</label>
+                        <SingleDatePicker 
+                            date={this.state.startDate}
+                            onDateChange={this.onDateChange("start")}
+                            focused={this.state.startCalendarFocused}
+                            onFocusChange={this.onCalendarFocusChanged("start")}
+                            numberOfMonths={1}
+                            isOutsideRange={()=> false}
+                            block
+                        />
+                    </div>
+                    <div className="form__input">
+                        <label>End Date</label>
+                        <SingleDatePicker 
+                            date={this.state.endDate}
+                            onDateChange={this.onDateChange("end")}
+                            focused={this.state.endCalendarFocused}
+                            onFocusChange={this.onCalendarFocusChanged("end")}
+                            numberOfMonths={1}
+                            isOutsideRange={()=> false}
+                            block
+                        />
                     </div>
                 </form>
             </div>
