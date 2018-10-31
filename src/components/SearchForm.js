@@ -17,6 +17,7 @@ export class SearchForm extends React.Component {
         this.onLocationChange = this.onLocationChange.bind(this);
         this.onDateChange = this.onDateChange.bind(this);
         this.onCalendarFocusChanged = this.onCalendarFocusChanged.bind(this);
+        this.resetState = this.resetState.bind(this);
 
         this.state = {
             players: "",
@@ -34,6 +35,21 @@ export class SearchForm extends React.Component {
     
     onSubmit(e){
         e.preventDefault();
+    }
+
+    resetState(){
+        this.setState({
+            players: "",
+            teams: [],
+            opponents: [],
+            location: "either",
+            penalty: "",
+            startDate: undefined,
+            endDate: undefined,
+            season: "Regular_18_19",
+            startCalendarFocused: false,
+            endCalendarFocused: false
+        })
     }
 
     onTeamChange = (key) => (e) => {
@@ -67,9 +83,9 @@ export class SearchForm extends React.Component {
     onTextChange = (key) => (e) => {
         var newValue = e.target.value;
         switch(key){
-            case "type":
+            case "name":
                 this.setState({
-                    name: newValue
+                    players: newValue
                 });
                 break;
             case "penalty":
@@ -189,7 +205,7 @@ export class SearchForm extends React.Component {
                             className="text-input"
                             placeholder="Name"
                             autoFocus
-                            value={this.state.name}
+                            value={this.state.players}
                             onChange={this.onTextChange("name")}
                         />
                     </div>
@@ -247,6 +263,10 @@ export class SearchForm extends React.Component {
                             isOutsideRange={()=> false}
                             block
                         />
+                    </div>
+                    <div className="buttons">
+                        <button className="button" onClick={this.resetState}>Reset</button>
+                        <button className="button">Submit</button>
                     </div>
                 </form>
             </div>

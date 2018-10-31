@@ -20,3 +20,10 @@
     background: none;
     color: $buttonTextColor;
 }
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin: 0px auto 0px auto;
+}
