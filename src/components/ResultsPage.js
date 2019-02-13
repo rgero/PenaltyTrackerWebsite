@@ -4,7 +4,7 @@ import {connect} from 'react-redux';
 //Components
 import Header from './Header';
 
-export default class ResultsPage extends Component {
+export class ResultsPage extends Component {
 
   constructor(props){
       super(props);
@@ -25,8 +25,9 @@ export default class ResultsPage extends Component {
 
 const mapStateToProps = (state, props) => {
     return {
-        query: state.query
+        query: state.query,
+        results: null
     };
 }
 
-//export default connect(mapStateToProps, undefined)(ResultsPage);
+export default connect(mapStateToProps)(ResultsPage);

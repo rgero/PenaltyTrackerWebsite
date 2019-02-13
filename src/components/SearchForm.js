@@ -35,6 +35,16 @@ export class SearchForm extends React.Component {
     
     onSubmit(e){
         e.preventDefault();
+        this.props.onSubmit({
+            players: this.state.players,
+            teams: this.state.teams,
+            opponents: this.state.opponents,
+            location: this.state.location,
+            penalty: this.state.penalties,
+            startDate: this.state.startDate,
+            endDate: this.state.endDate,
+            season: this.state.season
+        })
     }
 
     resetState(){
