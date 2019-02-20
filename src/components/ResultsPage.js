@@ -13,6 +13,20 @@ export class ResultsPage extends Component {
         this.props.history.push('/')
       }
       this.generateURL = this.generateURL.bind(this);
+
+      this.state = {
+        penalties: []
+      }
+  }
+
+  componentDidMount(){
+    if (!this.props.query){
+      this.props.history.push('/')
+    }
+    var url = this.generateURL(this.props.query);
+    fetch(url)
+      .then(response => response.json())
+      .then(data => this.setState({ penalties: data}))
   }
 
   generateURL(params){
@@ -43,19 +57,16 @@ export class ResultsPage extends Component {
       url = url + "&teams=" + params["teams"].join()
     }
 
-
-
-
+    // There are other parameters.
     return url;
   }
 
   render() {
-    var url = this.generateURL(this.props.query);
-    console.log(url);
+    console.log(this.state);
     return (
       <div>
         <Header/>
-        RESULTS!
+        There are {this.state.penalties.length} penalties.
       </div>
     );
   }
@@ -64,7 +75,6 @@ export class ResultsPage extends Component {
 const mapStateToProps = (state, props) => {
     return {
         ...state.query,
-        results: null
     };
 }
 
