@@ -9,15 +9,24 @@ export class ResultsPage extends Component {
 
   constructor(props){
       super(props);
-      console.log(props);
+      
   }
 
   render() {
-    console.log(this.props)
     return (
       <div>
         <Header/>
-        { this.props.penalties ?  this.props.penalties : null }
+        { this.props.penalties ?  (
+          <div>
+            There are {this.props.penalties.length} penalties
+          </div>
+        ):(
+          <div>
+            There are no penalties currently being reported.
+          </div>
+        
+        
+        )}
       </div>
     );
   }
