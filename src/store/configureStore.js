@@ -1,6 +1,6 @@
 import {createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
-import queryReducer from '../reducers/query';
+import penaltyReducer from '../reducers/penalties';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
@@ -12,7 +12,7 @@ export default () => {
     // Combines reducers so you can have a single store.
     const store = createStore(
         combineReducers({
-            query: queryReducer
+            penalties: penaltyReducer
         }),
         composeEnhancers(applyMiddleware(thunk))
     );

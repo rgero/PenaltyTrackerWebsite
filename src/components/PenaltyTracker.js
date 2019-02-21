@@ -4,7 +4,7 @@ import {connect} from 'react-redux';
 import Header from './Header';
 import SearchHeader from './SearchHeader';
 import { SearchForm } from './SearchForm';
-import {startQuery} from '../actions/query';
+import {executeQuery} from '../actions/penalties';
 
 class PenaltyTracker extends React.Component {
 
@@ -32,7 +32,7 @@ class PenaltyTracker extends React.Component {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    onSubmit: (query) => dispatch(startQuery(query))
+    onSubmit: (query) => dispatch(executeQuery(query))
   }
 }
 
