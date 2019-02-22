@@ -1,8 +1,5 @@
 import React from 'react';
-import moment from 'moment';
 import { SingleDatePicker } from 'react-dates';
-import {connect} from 'react-redux';
-import {Link} from 'react-router-dom';
 
 export class SearchForm extends React.Component {
 

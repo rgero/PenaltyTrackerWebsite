@@ -1,11 +1,9 @@
-export default (state = {}, action) => {
+const defaultState = [];
+export default (state = defaultState, action) => {
 
     switch(action.type){
         case "SET_PENALTIES":
-            return {
-                ...state,
-                penalties: action.penalties
-            }
+            return action.penalties
         default:
             return state;
     }
