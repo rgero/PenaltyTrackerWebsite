@@ -11,6 +11,9 @@ export const executeQuery = (query) => {
         fetch(url)
             .then(response => response.json())
             .then( (data) => {
-                dispatch(setPenalties(data)) } )
+                // Convert the collection of objects into an Array
+                var penaltyList = Object.values(data);
+
+                dispatch(setPenalties(penaltyList)) } )
     }
 }
