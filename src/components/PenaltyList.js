@@ -1,40 +1,48 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import PenaltyListItem from './PenaltyListItem'
+
+import _ from "lodash";
+
+// Import React Table
+import ReactTable from "react-table";
+import "react-table/react-table.css";
 
 export const PenaltyList = (props) => {
+    var data = props.penalties;
     return (
         <div className="content-container">
-            <div className="list-header">
-                <div className="show-for-desktop">Player</div>
-                <div className="show-for-desktop">Team</div>
-                <div className="show-for-desktop">Opponent</div>
-                <div className="show-for-desktop">Penalty</div>
-                <div className="show-for-desktop">Date</div>
-                <div className="show-for-desktop">Home/Away</div>
-                <div className="show-for-desktop">Referees</div>
-            </div>
-            <div className="list-body">
-                {
-                    props.penalties.length === 0 ? (
-                        <div className="list-item list-item--message">
-                            <span>No Penalties</span>
-                        </div>
-                    ) : (
-                        props.penalties.map((penalty, index) => (
-                            <PenaltyListItem
-                                playerName = {penalty.playerName}
-                                teamName = {penalty.teamName}
-                                opponentTeam = {penalty.opponentTeam}
-                                penalty = {penalty.penalty}
-                                gameDate = {penalty.gameDate}
-                                homeAway = {penalty.homeAway}
-                                refs = {penalty.refs}
-                            />
-                        ))
-                    )
-                }
-            </div>
+            <ReactTable
+                data={data}
+                columns={[
+                    {
+                    Header: "Penalty",
+                    columns: [
+                        {
+                        Header: "Name",
+                        accessor: "playerName"
+                        },
+                        {
+                            Header: "Team Name",
+                            accessor: "teamName"
+                        },
+                        {
+                            Header: "Opponent",
+                            accessor: "opponentTeam"
+                        },
+                        {
+                            Header: "Game Date",
+                            accessor: "gameDate"
+                        },
+                        {
+                            Header: "Penalty",
+                            accessor: "penalty"
+                        },
+                    ]
+                    }
+                ]}
+                defaultPageSize={10}
+                className="-striped -highlight"
+                />
         </div>
     )
 };

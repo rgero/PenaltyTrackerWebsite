@@ -13,7 +13,6 @@ export const executeQuery = (query) => {
             .then( (data) => {
                 // Convert the collection of objects into an Array
                 var penaltyList = Object.values(data);
-
                 dispatch(setPenalties(penaltyList)) } )
     }
 }
