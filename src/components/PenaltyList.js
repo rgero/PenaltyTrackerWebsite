@@ -37,6 +37,11 @@ export const PenaltyList = (props) => {
                             Header: "Penalty",
                             accessor: "penalty"
                         },
+                        {
+                            Header: "Location",
+                            accessor: "homeAway",
+                            Cell: props => <div> { props.value === 1 ? "Home" : "Away" } </div>
+                        }
                     ]
                     }
                 ]}
