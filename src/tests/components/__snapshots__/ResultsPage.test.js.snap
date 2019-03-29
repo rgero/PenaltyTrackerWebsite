@@ -1,0 +1,312 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ResultsPage Rendering Test - Data Rendering 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ResultsPage
+    penalties={
+      Array [
+        Object {
+          "gameDate": "2018-10-08",
+          "homeAway": 0,
+          "id": 259,
+          "opponentTeam": "Ottawa Senators",
+          "penalty": "Delaying Game - Puck over glass",
+          "playerName": "Patrice Bergeron",
+          "refs": "Gord Dwyer, TJ Luxmore",
+          "teamName": "Boston Bruins",
+        },
+        Object {
+          "gameDate": "2018-10-17",
+          "homeAway": 1,
+          "id": 721,
+          "opponentTeam": "Calgary Flames",
+          "penalty": "Hi-sticking",
+          "playerName": "Patrice Bergeron",
+          "refs": "Ghislain Hebert, Brad Meier",
+          "teamName": "Boston Bruins",
+        },
+        Object {
+          "gameDate": "2018-11-14",
+          "homeAway": 1,
+          "id": 2219,
+          "opponentTeam": "Colorado Avalanche",
+          "penalty": "Hooking",
+          "playerName": "Patrice Bergeron",
+          "refs": "Chris Schlenker, Brad Watson",
+          "teamName": "Boston Bruins",
+        },
+        Object {
+          "gameDate": "2018-11-14",
+          "homeAway": 1,
+          "id": 2222,
+          "opponentTeam": "Colorado Avalanche",
+          "penalty": "Hooking",
+          "playerName": "Patrice Bergeron",
+          "refs": "Chris Schlenker, Brad Watson",
+          "teamName": "Boston Bruins",
+        },
+        Object {
+          "gameDate": "2018-11-16",
+          "homeAway": 1,
+          "id": 2313,
+          "opponentTeam": "Dallas Stars",
+          "penalty": "Roughing",
+          "playerName": "Patrice Bergeron",
+          "refs": "Kyle Rehman, Trevor Hanson",
+          "teamName": "Boston Bruins",
+        },
+        Object {
+          "gameDate": "2019-01-10",
+          "homeAway": 0,
+          "id": 4976,
+          "opponentTeam": "Washington Capitals",
+          "penalty": "Tripping",
+          "playerName": "Patrice Bergeron",
+          "refs": "Jake Brenk, Francois StLaurent",
+          "teamName": "Boston Bruins",
+        },
+        Object {
+          "gameDate": "2019-01-12",
+          "homeAway": 1,
+          "id": 5117,
+          "opponentTeam": "Toronto Maple Leafs",
+          "penalty": "Delaying Game - Puck over glass",
+          "playerName": "Patrice Bergeron",
+          "refs": "Dan O'Rourke, Ghislain Hebert",
+          "teamName": "Boston Bruins",
+        },
+        Object {
+          "gameDate": "2019-01-16",
+          "homeAway": 1,
+          "id": 5333,
+          "opponentTeam": "Philadelphia Flyers",
+          "penalty": "Tripping",
+          "playerName": "Patrice Bergeron",
+          "refs": "Kevin Pollock, Pierre Lambert",
+          "teamName": "Boston Bruins",
+        },
+        Object {
+          "gameDate": "2019-01-19",
+          "homeAway": 0,
+          "id": 5472,
+          "opponentTeam": "New York Rangers",
+          "penalty": "Hi-sticking",
+          "playerName": "Patrice Bergeron",
+          "refs": "Kyle Rehman, Marc Joannette",
+          "teamName": "Boston Bruins",
+        },
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Header />,
+        <Connect(PenaltyList) />,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Header />,
+          <Connect(PenaltyList) />,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
+
+exports[`ResultsPage Rendering Test - No Data Rendering 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ResultsPage />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Header />,
+        <Connect(PenaltyList) />,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Header />,
+          <Connect(PenaltyList) />,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;

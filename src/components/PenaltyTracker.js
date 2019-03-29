@@ -6,7 +6,7 @@ import SearchHeader from './SearchHeader';
 import { SearchForm } from './SearchForm';
 import {executeQuery} from '../actions/penalties';
 
-class PenaltyTracker extends React.Component {
+export class PenaltyTracker extends React.Component {
 
   constructor(props){
     super(props);

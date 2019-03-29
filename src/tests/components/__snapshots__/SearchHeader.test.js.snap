@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchHeader Rendering Test 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <SearchHeader />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h1
+          className="page-header__title"
+        >
+          Enter your search criteria
+        </h1>,
+        <div
+          className=".page-header__description"
+        >
+          Please fill out all of the members you'd like. If a field is blank, all members will be used.
+        </div>,
+      ],
+      "className": "page-header",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Enter your search criteria",
+          "className": "page-header__title",
+        },
+        "ref": null,
+        "rendered": "Enter your search criteria",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Please fill out all of the members you'd like. If a field is blank, all members will be used.",
+          "className": ".page-header__description",
+        },
+        "ref": null,
+        "rendered": "Please fill out all of the members you'd like. If a field is blank, all members will be used.",
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1
+            className="page-header__title"
+          >
+            Enter your search criteria
+          </h1>,
+          <div
+            className=".page-header__description"
+          >
+            Please fill out all of the members you'd like. If a field is blank, all members will be used.
+          </div>,
+        ],
+        "className": "page-header",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Enter your search criteria",
+            "className": "page-header__title",
+          },
+          "ref": null,
+          "rendered": "Enter your search criteria",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Please fill out all of the members you'd like. If a field is blank, all members will be used.",
+            "className": ".page-header__description",
+          },
+          "ref": null,
+          "rendered": "Please fill out all of the members you'd like. If a field is blank, all members will be used.",
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

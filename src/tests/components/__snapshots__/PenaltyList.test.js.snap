@@ -1,0 +1,1994 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PenaltyList Rendering Test - Data Rendering 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PenaltyList
+    penalties={
+      Array [
+        Object {
+          "gameDate": "2018-10-08",
+          "homeAway": 0,
+          "id": 259,
+          "opponentTeam": "Ottawa Senators",
+          "penalty": "Delaying Game - Puck over glass",
+          "playerName": "Patrice Bergeron",
+          "refs": "Gord Dwyer, TJ Luxmore",
+          "teamName": "Boston Bruins",
+        },
+        Object {
+          "gameDate": "2018-10-17",
+          "homeAway": 1,
+          "id": 721,
+          "opponentTeam": "Calgary Flames",
+          "penalty": "Hi-sticking",
+          "playerName": "Patrice Bergeron",
+          "refs": "Ghislain Hebert, Brad Meier",
+          "teamName": "Boston Bruins",
+        },
+        Object {
+          "gameDate": "2018-11-14",
+          "homeAway": 1,
+          "id": 2219,
+          "opponentTeam": "Colorado Avalanche",
+          "penalty": "Hooking",
+          "playerName": "Patrice Bergeron",
+          "refs": "Chris Schlenker, Brad Watson",
+          "teamName": "Boston Bruins",
+        },
+        Object {
+          "gameDate": "2018-11-14",
+          "homeAway": 1,
+          "id": 2222,
+          "opponentTeam": "Colorado Avalanche",
+          "penalty": "Hooking",
+          "playerName": "Patrice Bergeron",
+          "refs": "Chris Schlenker, Brad Watson",
+          "teamName": "Boston Bruins",
+        },
+        Object {
+          "gameDate": "2018-11-16",
+          "homeAway": 1,
+          "id": 2313,
+          "opponentTeam": "Dallas Stars",
+          "penalty": "Roughing",
+          "playerName": "Patrice Bergeron",
+          "refs": "Kyle Rehman, Trevor Hanson",
+          "teamName": "Boston Bruins",
+        },
+        Object {
+          "gameDate": "2019-01-10",
+          "homeAway": 0,
+          "id": 4976,
+          "opponentTeam": "Washington Capitals",
+          "penalty": "Tripping",
+          "playerName": "Patrice Bergeron",
+          "refs": "Jake Brenk, Francois StLaurent",
+          "teamName": "Boston Bruins",
+        },
+        Object {
+          "gameDate": "2019-01-12",
+          "homeAway": 1,
+          "id": 5117,
+          "opponentTeam": "Toronto Maple Leafs",
+          "penalty": "Delaying Game - Puck over glass",
+          "playerName": "Patrice Bergeron",
+          "refs": "Dan O'Rourke, Ghislain Hebert",
+          "teamName": "Boston Bruins",
+        },
+        Object {
+          "gameDate": "2019-01-16",
+          "homeAway": 1,
+          "id": 5333,
+          "opponentTeam": "Philadelphia Flyers",
+          "penalty": "Tripping",
+          "playerName": "Patrice Bergeron",
+          "refs": "Kevin Pollock, Pierre Lambert",
+          "teamName": "Boston Bruins",
+        },
+        Object {
+          "gameDate": "2019-01-19",
+          "homeAway": 0,
+          "id": 5472,
+          "opponentTeam": "New York Rangers",
+          "penalty": "Hi-sticking",
+          "playerName": "Patrice Bergeron",
+          "refs": "Kyle Rehman, Marc Joannette",
+          "teamName": "Boston Bruins",
+        },
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <ReactTable
+        AggregatedComponent={[Function]}
+        ExpanderComponent={[Function]}
+        FilterComponent={[Function]}
+        LoadingComponent={[Function]}
+        NoDataComponent={[Function]}
+        PadRowComponent={[Function]}
+        PaginationComponent={[Function]}
+        PivotValueComponent={[Function]}
+        ResizerComponent={[Function]}
+        TableComponent={[Function]}
+        TbodyComponent={[Function]}
+        TdComponent={[Function]}
+        TfootComponent={[Function]}
+        ThComponent={[Function]}
+        TheadComponent={[Function]}
+        TrComponent={[Function]}
+        TrGroupComponent={[Function]}
+        aggregatedKey="_aggregated"
+        className="-striped -highlight"
+        collapseOnDataChange={true}
+        collapseOnPageChange={true}
+        collapseOnSortingChange={true}
+        column={
+          Object {
+            "Aggregated": undefined,
+            "Cell": undefined,
+            "Expander": undefined,
+            "Filter": undefined,
+            "Footer": undefined,
+            "Header": undefined,
+            "Pivot": undefined,
+            "PivotValue": undefined,
+            "Placeholder": undefined,
+            "aggregate": undefined,
+            "className": "",
+            "filterAll": false,
+            "filterMethod": undefined,
+            "filterable": undefined,
+            "footerClassName": "",
+            "footerStyle": Object {},
+            "getFooterProps": [Function],
+            "getHeaderProps": [Function],
+            "getProps": [Function],
+            "headerClassName": "",
+            "headerStyle": Object {},
+            "minResizeWidth": 11,
+            "minWidth": 100,
+            "resizable": undefined,
+            "show": true,
+            "sortMethod": undefined,
+            "sortable": undefined,
+            "style": Object {},
+          }
+        }
+        columns={
+          Array [
+            Object {
+              "Header": "Penalty",
+              "columns": Array [
+                Object {
+                  "Header": "Name",
+                  "accessor": "playerName",
+                },
+                Object {
+                  "Header": "Team Name",
+                  "accessor": "teamName",
+                },
+                Object {
+                  "Header": "Opponent",
+                  "accessor": "opponentTeam",
+                },
+                Object {
+                  "Header": "Game Date",
+                  "accessor": "gameDate",
+                },
+                Object {
+                  "Header": "Penalty",
+                  "accessor": "penalty",
+                },
+                Object {
+                  "Cell": [Function],
+                  "Header": "Location",
+                  "accessor": "homeAway",
+                },
+              ],
+            },
+          ]
+        }
+        data={
+          Array [
+            Object {
+              "gameDate": "2018-10-08",
+              "homeAway": 0,
+              "id": 259,
+              "opponentTeam": "Ottawa Senators",
+              "penalty": "Delaying Game - Puck over glass",
+              "playerName": "Patrice Bergeron",
+              "refs": "Gord Dwyer, TJ Luxmore",
+              "teamName": "Boston Bruins",
+            },
+            Object {
+              "gameDate": "2018-10-17",
+              "homeAway": 1,
+              "id": 721,
+              "opponentTeam": "Calgary Flames",
+              "penalty": "Hi-sticking",
+              "playerName": "Patrice Bergeron",
+              "refs": "Ghislain Hebert, Brad Meier",
+              "teamName": "Boston Bruins",
+            },
+            Object {
+              "gameDate": "2018-11-14",
+              "homeAway": 1,
+              "id": 2219,
+              "opponentTeam": "Colorado Avalanche",
+              "penalty": "Hooking",
+              "playerName": "Patrice Bergeron",
+              "refs": "Chris Schlenker, Brad Watson",
+              "teamName": "Boston Bruins",
+            },
+            Object {
+              "gameDate": "2018-11-14",
+              "homeAway": 1,
+              "id": 2222,
+              "opponentTeam": "Colorado Avalanche",
+              "penalty": "Hooking",
+              "playerName": "Patrice Bergeron",
+              "refs": "Chris Schlenker, Brad Watson",
+              "teamName": "Boston Bruins",
+            },
+            Object {
+              "gameDate": "2018-11-16",
+              "homeAway": 1,
+              "id": 2313,
+              "opponentTeam": "Dallas Stars",
+              "penalty": "Roughing",
+              "playerName": "Patrice Bergeron",
+              "refs": "Kyle Rehman, Trevor Hanson",
+              "teamName": "Boston Bruins",
+            },
+            Object {
+              "gameDate": "2019-01-10",
+              "homeAway": 0,
+              "id": 4976,
+              "opponentTeam": "Washington Capitals",
+              "penalty": "Tripping",
+              "playerName": "Patrice Bergeron",
+              "refs": "Jake Brenk, Francois StLaurent",
+              "teamName": "Boston Bruins",
+            },
+            Object {
+              "gameDate": "2019-01-12",
+              "homeAway": 1,
+              "id": 5117,
+              "opponentTeam": "Toronto Maple Leafs",
+              "penalty": "Delaying Game - Puck over glass",
+              "playerName": "Patrice Bergeron",
+              "refs": "Dan O'Rourke, Ghislain Hebert",
+              "teamName": "Boston Bruins",
+            },
+            Object {
+              "gameDate": "2019-01-16",
+              "homeAway": 1,
+              "id": 5333,
+              "opponentTeam": "Philadelphia Flyers",
+              "penalty": "Tripping",
+              "playerName": "Patrice Bergeron",
+              "refs": "Kevin Pollock, Pierre Lambert",
+              "teamName": "Boston Bruins",
+            },
+            Object {
+              "gameDate": "2019-01-19",
+              "homeAway": 0,
+              "id": 5472,
+              "opponentTeam": "New York Rangers",
+              "penalty": "Hi-sticking",
+              "playerName": "Patrice Bergeron",
+              "refs": "Kyle Rehman, Marc Joannette",
+              "teamName": "Boston Bruins",
+            },
+          ]
+        }
+        defaultExpanded={Object {}}
+        defaultFilterMethod={[Function]}
+        defaultFiltered={Array []}
+        defaultPage={0}
+        defaultPageSize={10}
+        defaultResized={Array []}
+        defaultSortDesc={false}
+        defaultSortMethod={[Function]}
+        defaultSorted={Array []}
+        expanderDefaults={
+          Object {
+            "filterable": false,
+            "resizable": false,
+            "sortable": false,
+            "width": 35,
+          }
+        }
+        filterable={false}
+        freezeWhenExpanded={false}
+        getLoadingProps={[Function]}
+        getNoDataProps={[Function]}
+        getPaginationProps={[Function]}
+        getProps={[Function]}
+        getResizerProps={[Function]}
+        getTableProps={[Function]}
+        getTbodyProps={[Function]}
+        getTdProps={[Function]}
+        getTfootProps={[Function]}
+        getTfootTdProps={[Function]}
+        getTfootTrProps={[Function]}
+        getTheadFilterProps={[Function]}
+        getTheadFilterThProps={[Function]}
+        getTheadFilterTrProps={[Function]}
+        getTheadGroupProps={[Function]}
+        getTheadGroupThProps={[Function]}
+        getTheadGroupTrProps={[Function]}
+        getTheadProps={[Function]}
+        getTheadThProps={[Function]}
+        getTheadTrProps={[Function]}
+        getTrGroupProps={[Function]}
+        getTrProps={[Function]}
+        groupedByPivotKey="_groupedByPivot"
+        indexKey="_index"
+        loading={false}
+        loadingText="Loading..."
+        multiSort={true}
+        nestingLevelKey="_nestingLevel"
+        nextText="Next"
+        noDataText="No rows found"
+        ofText="of"
+        onFetchData={[Function]}
+        originalKey="_original"
+        pageJumpText="jump to page"
+        pageSizeOptions={
+          Array [
+            5,
+            10,
+            20,
+            25,
+            50,
+            100,
+          ]
+        }
+        pageText="Page"
+        pivotDefaults={Object {}}
+        pivotIDKey="_pivotID"
+        pivotValKey="_pivotVal"
+        previousText="Previous"
+        resizable={true}
+        resolveData={[Function]}
+        rowsSelectorText="rows per page"
+        rowsText="rows"
+        showPageJump={true}
+        showPageSizeOptions={true}
+        showPagination={true}
+        showPaginationBottom={true}
+        showPaginationTop={false}
+        sortable={true}
+        style={Object {}}
+        subRowsKey="_subRows"
+      />,
+      "className": "content-container",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "AggregatedComponent": [Function],
+        "ExpanderComponent": [Function],
+        "FilterComponent": [Function],
+        "LoadingComponent": [Function],
+        "NextComponent": undefined,
+        "NoDataComponent": [Function],
+        "PadRowComponent": [Function],
+        "PaginationComponent": [Function],
+        "PivotComponent": undefined,
+        "PivotValueComponent": [Function],
+        "PreviousComponent": undefined,
+        "ResizerComponent": [Function],
+        "TableComponent": [Function],
+        "TbodyComponent": [Function],
+        "TdComponent": [Function],
+        "TfootComponent": [Function],
+        "ThComponent": [Function],
+        "TheadComponent": [Function],
+        "TrComponent": [Function],
+        "TrGroupComponent": [Function],
+        "aggregatedKey": "_aggregated",
+        "className": "-striped -highlight",
+        "collapseOnDataChange": true,
+        "collapseOnPageChange": true,
+        "collapseOnSortingChange": true,
+        "column": Object {
+          "Aggregated": undefined,
+          "Cell": undefined,
+          "Expander": undefined,
+          "Filter": undefined,
+          "Footer": undefined,
+          "Header": undefined,
+          "Pivot": undefined,
+          "PivotValue": undefined,
+          "Placeholder": undefined,
+          "aggregate": undefined,
+          "className": "",
+          "filterAll": false,
+          "filterMethod": undefined,
+          "filterable": undefined,
+          "footerClassName": "",
+          "footerStyle": Object {},
+          "getFooterProps": [Function],
+          "getHeaderProps": [Function],
+          "getProps": [Function],
+          "headerClassName": "",
+          "headerStyle": Object {},
+          "minResizeWidth": 11,
+          "minWidth": 100,
+          "resizable": undefined,
+          "show": true,
+          "sortMethod": undefined,
+          "sortable": undefined,
+          "style": Object {},
+        },
+        "columns": Array [
+          Object {
+            "Header": "Penalty",
+            "columns": Array [
+              Object {
+                "Header": "Name",
+                "accessor": "playerName",
+              },
+              Object {
+                "Header": "Team Name",
+                "accessor": "teamName",
+              },
+              Object {
+                "Header": "Opponent",
+                "accessor": "opponentTeam",
+              },
+              Object {
+                "Header": "Game Date",
+                "accessor": "gameDate",
+              },
+              Object {
+                "Header": "Penalty",
+                "accessor": "penalty",
+              },
+              Object {
+                "Cell": [Function],
+                "Header": "Location",
+                "accessor": "homeAway",
+              },
+            ],
+          },
+        ],
+        "data": Array [
+          Object {
+            "gameDate": "2018-10-08",
+            "homeAway": 0,
+            "id": 259,
+            "opponentTeam": "Ottawa Senators",
+            "penalty": "Delaying Game - Puck over glass",
+            "playerName": "Patrice Bergeron",
+            "refs": "Gord Dwyer, TJ Luxmore",
+            "teamName": "Boston Bruins",
+          },
+          Object {
+            "gameDate": "2018-10-17",
+            "homeAway": 1,
+            "id": 721,
+            "opponentTeam": "Calgary Flames",
+            "penalty": "Hi-sticking",
+            "playerName": "Patrice Bergeron",
+            "refs": "Ghislain Hebert, Brad Meier",
+            "teamName": "Boston Bruins",
+          },
+          Object {
+            "gameDate": "2018-11-14",
+            "homeAway": 1,
+            "id": 2219,
+            "opponentTeam": "Colorado Avalanche",
+            "penalty": "Hooking",
+            "playerName": "Patrice Bergeron",
+            "refs": "Chris Schlenker, Brad Watson",
+            "teamName": "Boston Bruins",
+          },
+          Object {
+            "gameDate": "2018-11-14",
+            "homeAway": 1,
+            "id": 2222,
+            "opponentTeam": "Colorado Avalanche",
+            "penalty": "Hooking",
+            "playerName": "Patrice Bergeron",
+            "refs": "Chris Schlenker, Brad Watson",
+            "teamName": "Boston Bruins",
+          },
+          Object {
+            "gameDate": "2018-11-16",
+            "homeAway": 1,
+            "id": 2313,
+            "opponentTeam": "Dallas Stars",
+            "penalty": "Roughing",
+            "playerName": "Patrice Bergeron",
+            "refs": "Kyle Rehman, Trevor Hanson",
+            "teamName": "Boston Bruins",
+          },
+          Object {
+            "gameDate": "2019-01-10",
+            "homeAway": 0,
+            "id": 4976,
+            "opponentTeam": "Washington Capitals",
+            "penalty": "Tripping",
+            "playerName": "Patrice Bergeron",
+            "refs": "Jake Brenk, Francois StLaurent",
+            "teamName": "Boston Bruins",
+          },
+          Object {
+            "gameDate": "2019-01-12",
+            "homeAway": 1,
+            "id": 5117,
+            "opponentTeam": "Toronto Maple Leafs",
+            "penalty": "Delaying Game - Puck over glass",
+            "playerName": "Patrice Bergeron",
+            "refs": "Dan O'Rourke, Ghislain Hebert",
+            "teamName": "Boston Bruins",
+          },
+          Object {
+            "gameDate": "2019-01-16",
+            "homeAway": 1,
+            "id": 5333,
+            "opponentTeam": "Philadelphia Flyers",
+            "penalty": "Tripping",
+            "playerName": "Patrice Bergeron",
+            "refs": "Kevin Pollock, Pierre Lambert",
+            "teamName": "Boston Bruins",
+          },
+          Object {
+            "gameDate": "2019-01-19",
+            "homeAway": 0,
+            "id": 5472,
+            "opponentTeam": "New York Rangers",
+            "penalty": "Hi-sticking",
+            "playerName": "Patrice Bergeron",
+            "refs": "Kyle Rehman, Marc Joannette",
+            "teamName": "Boston Bruins",
+          },
+        ],
+        "defaultExpanded": Object {},
+        "defaultFilterMethod": [Function],
+        "defaultFiltered": Array [],
+        "defaultPage": 0,
+        "defaultPageSize": 10,
+        "defaultResized": Array [],
+        "defaultSortDesc": false,
+        "defaultSortMethod": [Function],
+        "defaultSorted": Array [],
+        "expanderDefaults": Object {
+          "filterable": false,
+          "resizable": false,
+          "sortable": false,
+          "width": 35,
+        },
+        "filterable": false,
+        "freezeWhenExpanded": false,
+        "getLoadingProps": [Function],
+        "getNoDataProps": [Function],
+        "getPaginationProps": [Function],
+        "getProps": [Function],
+        "getResizerProps": [Function],
+        "getTableProps": [Function],
+        "getTbodyProps": [Function],
+        "getTdProps": [Function],
+        "getTfootProps": [Function],
+        "getTfootTdProps": [Function],
+        "getTfootTrProps": [Function],
+        "getTheadFilterProps": [Function],
+        "getTheadFilterThProps": [Function],
+        "getTheadFilterTrProps": [Function],
+        "getTheadGroupProps": [Function],
+        "getTheadGroupThProps": [Function],
+        "getTheadGroupTrProps": [Function],
+        "getTheadProps": [Function],
+        "getTheadThProps": [Function],
+        "getTheadTrProps": [Function],
+        "getTrGroupProps": [Function],
+        "getTrProps": [Function],
+        "groupedByPivotKey": "_groupedByPivot",
+        "indexKey": "_index",
+        "loading": false,
+        "loadingText": "Loading...",
+        "multiSort": true,
+        "nestingLevelKey": "_nestingLevel",
+        "nextText": "Next",
+        "noDataText": "No rows found",
+        "ofText": "of",
+        "onExpandedChange": undefined,
+        "onFetchData": [Function],
+        "onFilteredChange": undefined,
+        "onPageChange": undefined,
+        "onPageSizeChange": undefined,
+        "onResizedChange": undefined,
+        "onSortedChange": undefined,
+        "originalKey": "_original",
+        "pageJumpText": "jump to page",
+        "pageSizeOptions": Array [
+          5,
+          10,
+          20,
+          25,
+          50,
+          100,
+        ],
+        "pageText": "Page",
+        "pivotBy": undefined,
+        "pivotDefaults": Object {},
+        "pivotIDKey": "_pivotID",
+        "pivotValKey": "_pivotVal",
+        "previousText": "Previous",
+        "resizable": true,
+        "resolveData": [Function],
+        "rowsSelectorText": "rows per page",
+        "rowsText": "rows",
+        "showPageJump": true,
+        "showPageSizeOptions": true,
+        "showPagination": true,
+        "showPaginationBottom": true,
+        "showPaginationTop": false,
+        "sortable": true,
+        "style": Object {},
+        "subRowsKey": "_subRows",
+      },
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <ReactTable
+          AggregatedComponent={[Function]}
+          ExpanderComponent={[Function]}
+          FilterComponent={[Function]}
+          LoadingComponent={[Function]}
+          NoDataComponent={[Function]}
+          PadRowComponent={[Function]}
+          PaginationComponent={[Function]}
+          PivotValueComponent={[Function]}
+          ResizerComponent={[Function]}
+          TableComponent={[Function]}
+          TbodyComponent={[Function]}
+          TdComponent={[Function]}
+          TfootComponent={[Function]}
+          ThComponent={[Function]}
+          TheadComponent={[Function]}
+          TrComponent={[Function]}
+          TrGroupComponent={[Function]}
+          aggregatedKey="_aggregated"
+          className="-striped -highlight"
+          collapseOnDataChange={true}
+          collapseOnPageChange={true}
+          collapseOnSortingChange={true}
+          column={
+            Object {
+              "Aggregated": undefined,
+              "Cell": undefined,
+              "Expander": undefined,
+              "Filter": undefined,
+              "Footer": undefined,
+              "Header": undefined,
+              "Pivot": undefined,
+              "PivotValue": undefined,
+              "Placeholder": undefined,
+              "aggregate": undefined,
+              "className": "",
+              "filterAll": false,
+              "filterMethod": undefined,
+              "filterable": undefined,
+              "footerClassName": "",
+              "footerStyle": Object {},
+              "getFooterProps": [Function],
+              "getHeaderProps": [Function],
+              "getProps": [Function],
+              "headerClassName": "",
+              "headerStyle": Object {},
+              "minResizeWidth": 11,
+              "minWidth": 100,
+              "resizable": undefined,
+              "show": true,
+              "sortMethod": undefined,
+              "sortable": undefined,
+              "style": Object {},
+            }
+          }
+          columns={
+            Array [
+              Object {
+                "Header": "Penalty",
+                "columns": Array [
+                  Object {
+                    "Header": "Name",
+                    "accessor": "playerName",
+                  },
+                  Object {
+                    "Header": "Team Name",
+                    "accessor": "teamName",
+                  },
+                  Object {
+                    "Header": "Opponent",
+                    "accessor": "opponentTeam",
+                  },
+                  Object {
+                    "Header": "Game Date",
+                    "accessor": "gameDate",
+                  },
+                  Object {
+                    "Header": "Penalty",
+                    "accessor": "penalty",
+                  },
+                  Object {
+                    "Cell": [Function],
+                    "Header": "Location",
+                    "accessor": "homeAway",
+                  },
+                ],
+              },
+            ]
+          }
+          data={
+            Array [
+              Object {
+                "gameDate": "2018-10-08",
+                "homeAway": 0,
+                "id": 259,
+                "opponentTeam": "Ottawa Senators",
+                "penalty": "Delaying Game - Puck over glass",
+                "playerName": "Patrice Bergeron",
+                "refs": "Gord Dwyer, TJ Luxmore",
+                "teamName": "Boston Bruins",
+              },
+              Object {
+                "gameDate": "2018-10-17",
+                "homeAway": 1,
+                "id": 721,
+                "opponentTeam": "Calgary Flames",
+                "penalty": "Hi-sticking",
+                "playerName": "Patrice Bergeron",
+                "refs": "Ghislain Hebert, Brad Meier",
+                "teamName": "Boston Bruins",
+              },
+              Object {
+                "gameDate": "2018-11-14",
+                "homeAway": 1,
+                "id": 2219,
+                "opponentTeam": "Colorado Avalanche",
+                "penalty": "Hooking",
+                "playerName": "Patrice Bergeron",
+                "refs": "Chris Schlenker, Brad Watson",
+                "teamName": "Boston Bruins",
+              },
+              Object {
+                "gameDate": "2018-11-14",
+                "homeAway": 1,
+                "id": 2222,
+                "opponentTeam": "Colorado Avalanche",
+                "penalty": "Hooking",
+                "playerName": "Patrice Bergeron",
+                "refs": "Chris Schlenker, Brad Watson",
+                "teamName": "Boston Bruins",
+              },
+              Object {
+                "gameDate": "2018-11-16",
+                "homeAway": 1,
+                "id": 2313,
+                "opponentTeam": "Dallas Stars",
+                "penalty": "Roughing",
+                "playerName": "Patrice Bergeron",
+                "refs": "Kyle Rehman, Trevor Hanson",
+                "teamName": "Boston Bruins",
+              },
+              Object {
+                "gameDate": "2019-01-10",
+                "homeAway": 0,
+                "id": 4976,
+                "opponentTeam": "Washington Capitals",
+                "penalty": "Tripping",
+                "playerName": "Patrice Bergeron",
+                "refs": "Jake Brenk, Francois StLaurent",
+                "teamName": "Boston Bruins",
+              },
+              Object {
+                "gameDate": "2019-01-12",
+                "homeAway": 1,
+                "id": 5117,
+                "opponentTeam": "Toronto Maple Leafs",
+                "penalty": "Delaying Game - Puck over glass",
+                "playerName": "Patrice Bergeron",
+                "refs": "Dan O'Rourke, Ghislain Hebert",
+                "teamName": "Boston Bruins",
+              },
+              Object {
+                "gameDate": "2019-01-16",
+                "homeAway": 1,
+                "id": 5333,
+                "opponentTeam": "Philadelphia Flyers",
+                "penalty": "Tripping",
+                "playerName": "Patrice Bergeron",
+                "refs": "Kevin Pollock, Pierre Lambert",
+                "teamName": "Boston Bruins",
+              },
+              Object {
+                "gameDate": "2019-01-19",
+                "homeAway": 0,
+                "id": 5472,
+                "opponentTeam": "New York Rangers",
+                "penalty": "Hi-sticking",
+                "playerName": "Patrice Bergeron",
+                "refs": "Kyle Rehman, Marc Joannette",
+                "teamName": "Boston Bruins",
+              },
+            ]
+          }
+          defaultExpanded={Object {}}
+          defaultFilterMethod={[Function]}
+          defaultFiltered={Array []}
+          defaultPage={0}
+          defaultPageSize={10}
+          defaultResized={Array []}
+          defaultSortDesc={false}
+          defaultSortMethod={[Function]}
+          defaultSorted={Array []}
+          expanderDefaults={
+            Object {
+              "filterable": false,
+              "resizable": false,
+              "sortable": false,
+              "width": 35,
+            }
+          }
+          filterable={false}
+          freezeWhenExpanded={false}
+          getLoadingProps={[Function]}
+          getNoDataProps={[Function]}
+          getPaginationProps={[Function]}
+          getProps={[Function]}
+          getResizerProps={[Function]}
+          getTableProps={[Function]}
+          getTbodyProps={[Function]}
+          getTdProps={[Function]}
+          getTfootProps={[Function]}
+          getTfootTdProps={[Function]}
+          getTfootTrProps={[Function]}
+          getTheadFilterProps={[Function]}
+          getTheadFilterThProps={[Function]}
+          getTheadFilterTrProps={[Function]}
+          getTheadGroupProps={[Function]}
+          getTheadGroupThProps={[Function]}
+          getTheadGroupTrProps={[Function]}
+          getTheadProps={[Function]}
+          getTheadThProps={[Function]}
+          getTheadTrProps={[Function]}
+          getTrGroupProps={[Function]}
+          getTrProps={[Function]}
+          groupedByPivotKey="_groupedByPivot"
+          indexKey="_index"
+          loading={false}
+          loadingText="Loading..."
+          multiSort={true}
+          nestingLevelKey="_nestingLevel"
+          nextText="Next"
+          noDataText="No rows found"
+          ofText="of"
+          onFetchData={[Function]}
+          originalKey="_original"
+          pageJumpText="jump to page"
+          pageSizeOptions={
+            Array [
+              5,
+              10,
+              20,
+              25,
+              50,
+              100,
+            ]
+          }
+          pageText="Page"
+          pivotDefaults={Object {}}
+          pivotIDKey="_pivotID"
+          pivotValKey="_pivotVal"
+          previousText="Previous"
+          resizable={true}
+          resolveData={[Function]}
+          rowsSelectorText="rows per page"
+          rowsText="rows"
+          showPageJump={true}
+          showPageSizeOptions={true}
+          showPagination={true}
+          showPaginationBottom={true}
+          showPaginationTop={false}
+          sortable={true}
+          style={Object {}}
+          subRowsKey="_subRows"
+        />,
+        "className": "content-container",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "AggregatedComponent": [Function],
+          "ExpanderComponent": [Function],
+          "FilterComponent": [Function],
+          "LoadingComponent": [Function],
+          "NextComponent": undefined,
+          "NoDataComponent": [Function],
+          "PadRowComponent": [Function],
+          "PaginationComponent": [Function],
+          "PivotComponent": undefined,
+          "PivotValueComponent": [Function],
+          "PreviousComponent": undefined,
+          "ResizerComponent": [Function],
+          "TableComponent": [Function],
+          "TbodyComponent": [Function],
+          "TdComponent": [Function],
+          "TfootComponent": [Function],
+          "ThComponent": [Function],
+          "TheadComponent": [Function],
+          "TrComponent": [Function],
+          "TrGroupComponent": [Function],
+          "aggregatedKey": "_aggregated",
+          "className": "-striped -highlight",
+          "collapseOnDataChange": true,
+          "collapseOnPageChange": true,
+          "collapseOnSortingChange": true,
+          "column": Object {
+            "Aggregated": undefined,
+            "Cell": undefined,
+            "Expander": undefined,
+            "Filter": undefined,
+            "Footer": undefined,
+            "Header": undefined,
+            "Pivot": undefined,
+            "PivotValue": undefined,
+            "Placeholder": undefined,
+            "aggregate": undefined,
+            "className": "",
+            "filterAll": false,
+            "filterMethod": undefined,
+            "filterable": undefined,
+            "footerClassName": "",
+            "footerStyle": Object {},
+            "getFooterProps": [Function],
+            "getHeaderProps": [Function],
+            "getProps": [Function],
+            "headerClassName": "",
+            "headerStyle": Object {},
+            "minResizeWidth": 11,
+            "minWidth": 100,
+            "resizable": undefined,
+            "show": true,
+            "sortMethod": undefined,
+            "sortable": undefined,
+            "style": Object {},
+          },
+          "columns": Array [
+            Object {
+              "Header": "Penalty",
+              "columns": Array [
+                Object {
+                  "Header": "Name",
+                  "accessor": "playerName",
+                },
+                Object {
+                  "Header": "Team Name",
+                  "accessor": "teamName",
+                },
+                Object {
+                  "Header": "Opponent",
+                  "accessor": "opponentTeam",
+                },
+                Object {
+                  "Header": "Game Date",
+                  "accessor": "gameDate",
+                },
+                Object {
+                  "Header": "Penalty",
+                  "accessor": "penalty",
+                },
+                Object {
+                  "Cell": [Function],
+                  "Header": "Location",
+                  "accessor": "homeAway",
+                },
+              ],
+            },
+          ],
+          "data": Array [
+            Object {
+              "gameDate": "2018-10-08",
+              "homeAway": 0,
+              "id": 259,
+              "opponentTeam": "Ottawa Senators",
+              "penalty": "Delaying Game - Puck over glass",
+              "playerName": "Patrice Bergeron",
+              "refs": "Gord Dwyer, TJ Luxmore",
+              "teamName": "Boston Bruins",
+            },
+            Object {
+              "gameDate": "2018-10-17",
+              "homeAway": 1,
+              "id": 721,
+              "opponentTeam": "Calgary Flames",
+              "penalty": "Hi-sticking",
+              "playerName": "Patrice Bergeron",
+              "refs": "Ghislain Hebert, Brad Meier",
+              "teamName": "Boston Bruins",
+            },
+            Object {
+              "gameDate": "2018-11-14",
+              "homeAway": 1,
+              "id": 2219,
+              "opponentTeam": "Colorado Avalanche",
+              "penalty": "Hooking",
+              "playerName": "Patrice Bergeron",
+              "refs": "Chris Schlenker, Brad Watson",
+              "teamName": "Boston Bruins",
+            },
+            Object {
+              "gameDate": "2018-11-14",
+              "homeAway": 1,
+              "id": 2222,
+              "opponentTeam": "Colorado Avalanche",
+              "penalty": "Hooking",
+              "playerName": "Patrice Bergeron",
+              "refs": "Chris Schlenker, Brad Watson",
+              "teamName": "Boston Bruins",
+            },
+            Object {
+              "gameDate": "2018-11-16",
+              "homeAway": 1,
+              "id": 2313,
+              "opponentTeam": "Dallas Stars",
+              "penalty": "Roughing",
+              "playerName": "Patrice Bergeron",
+              "refs": "Kyle Rehman, Trevor Hanson",
+              "teamName": "Boston Bruins",
+            },
+            Object {
+              "gameDate": "2019-01-10",
+              "homeAway": 0,
+              "id": 4976,
+              "opponentTeam": "Washington Capitals",
+              "penalty": "Tripping",
+              "playerName": "Patrice Bergeron",
+              "refs": "Jake Brenk, Francois StLaurent",
+              "teamName": "Boston Bruins",
+            },
+            Object {
+              "gameDate": "2019-01-12",
+              "homeAway": 1,
+              "id": 5117,
+              "opponentTeam": "Toronto Maple Leafs",
+              "penalty": "Delaying Game - Puck over glass",
+              "playerName": "Patrice Bergeron",
+              "refs": "Dan O'Rourke, Ghislain Hebert",
+              "teamName": "Boston Bruins",
+            },
+            Object {
+              "gameDate": "2019-01-16",
+              "homeAway": 1,
+              "id": 5333,
+              "opponentTeam": "Philadelphia Flyers",
+              "penalty": "Tripping",
+              "playerName": "Patrice Bergeron",
+              "refs": "Kevin Pollock, Pierre Lambert",
+              "teamName": "Boston Bruins",
+            },
+            Object {
+              "gameDate": "2019-01-19",
+              "homeAway": 0,
+              "id": 5472,
+              "opponentTeam": "New York Rangers",
+              "penalty": "Hi-sticking",
+              "playerName": "Patrice Bergeron",
+              "refs": "Kyle Rehman, Marc Joannette",
+              "teamName": "Boston Bruins",
+            },
+          ],
+          "defaultExpanded": Object {},
+          "defaultFilterMethod": [Function],
+          "defaultFiltered": Array [],
+          "defaultPage": 0,
+          "defaultPageSize": 10,
+          "defaultResized": Array [],
+          "defaultSortDesc": false,
+          "defaultSortMethod": [Function],
+          "defaultSorted": Array [],
+          "expanderDefaults": Object {
+            "filterable": false,
+            "resizable": false,
+            "sortable": false,
+            "width": 35,
+          },
+          "filterable": false,
+          "freezeWhenExpanded": false,
+          "getLoadingProps": [Function],
+          "getNoDataProps": [Function],
+          "getPaginationProps": [Function],
+          "getProps": [Function],
+          "getResizerProps": [Function],
+          "getTableProps": [Function],
+          "getTbodyProps": [Function],
+          "getTdProps": [Function],
+          "getTfootProps": [Function],
+          "getTfootTdProps": [Function],
+          "getTfootTrProps": [Function],
+          "getTheadFilterProps": [Function],
+          "getTheadFilterThProps": [Function],
+          "getTheadFilterTrProps": [Function],
+          "getTheadGroupProps": [Function],
+          "getTheadGroupThProps": [Function],
+          "getTheadGroupTrProps": [Function],
+          "getTheadProps": [Function],
+          "getTheadThProps": [Function],
+          "getTheadTrProps": [Function],
+          "getTrGroupProps": [Function],
+          "getTrProps": [Function],
+          "groupedByPivotKey": "_groupedByPivot",
+          "indexKey": "_index",
+          "loading": false,
+          "loadingText": "Loading...",
+          "multiSort": true,
+          "nestingLevelKey": "_nestingLevel",
+          "nextText": "Next",
+          "noDataText": "No rows found",
+          "ofText": "of",
+          "onExpandedChange": undefined,
+          "onFetchData": [Function],
+          "onFilteredChange": undefined,
+          "onPageChange": undefined,
+          "onPageSizeChange": undefined,
+          "onResizedChange": undefined,
+          "onSortedChange": undefined,
+          "originalKey": "_original",
+          "pageJumpText": "jump to page",
+          "pageSizeOptions": Array [
+            5,
+            10,
+            20,
+            25,
+            50,
+            100,
+          ],
+          "pageText": "Page",
+          "pivotBy": undefined,
+          "pivotDefaults": Object {},
+          "pivotIDKey": "_pivotID",
+          "pivotValKey": "_pivotVal",
+          "previousText": "Previous",
+          "resizable": true,
+          "resolveData": [Function],
+          "rowsSelectorText": "rows per page",
+          "rowsText": "rows",
+          "showPageJump": true,
+          "showPageSizeOptions": true,
+          "showPagination": true,
+          "showPaginationBottom": true,
+          "showPaginationTop": false,
+          "sortable": true,
+          "style": Object {},
+          "subRowsKey": "_subRows",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`PenaltyList Rendering Test - No Data Rendering 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PenaltyList />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <ReactTable
+        AggregatedComponent={[Function]}
+        ExpanderComponent={[Function]}
+        FilterComponent={[Function]}
+        LoadingComponent={[Function]}
+        NoDataComponent={[Function]}
+        PadRowComponent={[Function]}
+        PaginationComponent={[Function]}
+        PivotValueComponent={[Function]}
+        ResizerComponent={[Function]}
+        TableComponent={[Function]}
+        TbodyComponent={[Function]}
+        TdComponent={[Function]}
+        TfootComponent={[Function]}
+        ThComponent={[Function]}
+        TheadComponent={[Function]}
+        TrComponent={[Function]}
+        TrGroupComponent={[Function]}
+        aggregatedKey="_aggregated"
+        className="-striped -highlight"
+        collapseOnDataChange={true}
+        collapseOnPageChange={true}
+        collapseOnSortingChange={true}
+        column={
+          Object {
+            "Aggregated": undefined,
+            "Cell": undefined,
+            "Expander": undefined,
+            "Filter": undefined,
+            "Footer": undefined,
+            "Header": undefined,
+            "Pivot": undefined,
+            "PivotValue": undefined,
+            "Placeholder": undefined,
+            "aggregate": undefined,
+            "className": "",
+            "filterAll": false,
+            "filterMethod": undefined,
+            "filterable": undefined,
+            "footerClassName": "",
+            "footerStyle": Object {},
+            "getFooterProps": [Function],
+            "getHeaderProps": [Function],
+            "getProps": [Function],
+            "headerClassName": "",
+            "headerStyle": Object {},
+            "minResizeWidth": 11,
+            "minWidth": 100,
+            "resizable": undefined,
+            "show": true,
+            "sortMethod": undefined,
+            "sortable": undefined,
+            "style": Object {},
+          }
+        }
+        columns={
+          Array [
+            Object {
+              "Header": "Penalty",
+              "columns": Array [
+                Object {
+                  "Header": "Name",
+                  "accessor": "playerName",
+                },
+                Object {
+                  "Header": "Team Name",
+                  "accessor": "teamName",
+                },
+                Object {
+                  "Header": "Opponent",
+                  "accessor": "opponentTeam",
+                },
+                Object {
+                  "Header": "Game Date",
+                  "accessor": "gameDate",
+                },
+                Object {
+                  "Header": "Penalty",
+                  "accessor": "penalty",
+                },
+                Object {
+                  "Cell": [Function],
+                  "Header": "Location",
+                  "accessor": "homeAway",
+                },
+              ],
+            },
+          ]
+        }
+        data={Array []}
+        defaultExpanded={Object {}}
+        defaultFilterMethod={[Function]}
+        defaultFiltered={Array []}
+        defaultPage={0}
+        defaultPageSize={10}
+        defaultResized={Array []}
+        defaultSortDesc={false}
+        defaultSortMethod={[Function]}
+        defaultSorted={Array []}
+        expanderDefaults={
+          Object {
+            "filterable": false,
+            "resizable": false,
+            "sortable": false,
+            "width": 35,
+          }
+        }
+        filterable={false}
+        freezeWhenExpanded={false}
+        getLoadingProps={[Function]}
+        getNoDataProps={[Function]}
+        getPaginationProps={[Function]}
+        getProps={[Function]}
+        getResizerProps={[Function]}
+        getTableProps={[Function]}
+        getTbodyProps={[Function]}
+        getTdProps={[Function]}
+        getTfootProps={[Function]}
+        getTfootTdProps={[Function]}
+        getTfootTrProps={[Function]}
+        getTheadFilterProps={[Function]}
+        getTheadFilterThProps={[Function]}
+        getTheadFilterTrProps={[Function]}
+        getTheadGroupProps={[Function]}
+        getTheadGroupThProps={[Function]}
+        getTheadGroupTrProps={[Function]}
+        getTheadProps={[Function]}
+        getTheadThProps={[Function]}
+        getTheadTrProps={[Function]}
+        getTrGroupProps={[Function]}
+        getTrProps={[Function]}
+        groupedByPivotKey="_groupedByPivot"
+        indexKey="_index"
+        loading={false}
+        loadingText="Loading..."
+        multiSort={true}
+        nestingLevelKey="_nestingLevel"
+        nextText="Next"
+        noDataText="No rows found"
+        ofText="of"
+        onFetchData={[Function]}
+        originalKey="_original"
+        pageJumpText="jump to page"
+        pageSizeOptions={
+          Array [
+            5,
+            10,
+            20,
+            25,
+            50,
+            100,
+          ]
+        }
+        pageText="Page"
+        pivotDefaults={Object {}}
+        pivotIDKey="_pivotID"
+        pivotValKey="_pivotVal"
+        previousText="Previous"
+        resizable={true}
+        resolveData={[Function]}
+        rowsSelectorText="rows per page"
+        rowsText="rows"
+        showPageJump={true}
+        showPageSizeOptions={true}
+        showPagination={true}
+        showPaginationBottom={true}
+        showPaginationTop={false}
+        sortable={true}
+        style={Object {}}
+        subRowsKey="_subRows"
+      />,
+      "className": "content-container",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "AggregatedComponent": [Function],
+        "ExpanderComponent": [Function],
+        "FilterComponent": [Function],
+        "LoadingComponent": [Function],
+        "NextComponent": undefined,
+        "NoDataComponent": [Function],
+        "PadRowComponent": [Function],
+        "PaginationComponent": [Function],
+        "PivotComponent": undefined,
+        "PivotValueComponent": [Function],
+        "PreviousComponent": undefined,
+        "ResizerComponent": [Function],
+        "TableComponent": [Function],
+        "TbodyComponent": [Function],
+        "TdComponent": [Function],
+        "TfootComponent": [Function],
+        "ThComponent": [Function],
+        "TheadComponent": [Function],
+        "TrComponent": [Function],
+        "TrGroupComponent": [Function],
+        "aggregatedKey": "_aggregated",
+        "className": "-striped -highlight",
+        "collapseOnDataChange": true,
+        "collapseOnPageChange": true,
+        "collapseOnSortingChange": true,
+        "column": Object {
+          "Aggregated": undefined,
+          "Cell": undefined,
+          "Expander": undefined,
+          "Filter": undefined,
+          "Footer": undefined,
+          "Header": undefined,
+          "Pivot": undefined,
+          "PivotValue": undefined,
+          "Placeholder": undefined,
+          "aggregate": undefined,
+          "className": "",
+          "filterAll": false,
+          "filterMethod": undefined,
+          "filterable": undefined,
+          "footerClassName": "",
+          "footerStyle": Object {},
+          "getFooterProps": [Function],
+          "getHeaderProps": [Function],
+          "getProps": [Function],
+          "headerClassName": "",
+          "headerStyle": Object {},
+          "minResizeWidth": 11,
+          "minWidth": 100,
+          "resizable": undefined,
+          "show": true,
+          "sortMethod": undefined,
+          "sortable": undefined,
+          "style": Object {},
+        },
+        "columns": Array [
+          Object {
+            "Header": "Penalty",
+            "columns": Array [
+              Object {
+                "Header": "Name",
+                "accessor": "playerName",
+              },
+              Object {
+                "Header": "Team Name",
+                "accessor": "teamName",
+              },
+              Object {
+                "Header": "Opponent",
+                "accessor": "opponentTeam",
+              },
+              Object {
+                "Header": "Game Date",
+                "accessor": "gameDate",
+              },
+              Object {
+                "Header": "Penalty",
+                "accessor": "penalty",
+              },
+              Object {
+                "Cell": [Function],
+                "Header": "Location",
+                "accessor": "homeAway",
+              },
+            ],
+          },
+        ],
+        "data": Array [],
+        "defaultExpanded": Object {},
+        "defaultFilterMethod": [Function],
+        "defaultFiltered": Array [],
+        "defaultPage": 0,
+        "defaultPageSize": 10,
+        "defaultResized": Array [],
+        "defaultSortDesc": false,
+        "defaultSortMethod": [Function],
+        "defaultSorted": Array [],
+        "expanderDefaults": Object {
+          "filterable": false,
+          "resizable": false,
+          "sortable": false,
+          "width": 35,
+        },
+        "filterable": false,
+        "freezeWhenExpanded": false,
+        "getLoadingProps": [Function],
+        "getNoDataProps": [Function],
+        "getPaginationProps": [Function],
+        "getProps": [Function],
+        "getResizerProps": [Function],
+        "getTableProps": [Function],
+        "getTbodyProps": [Function],
+        "getTdProps": [Function],
+        "getTfootProps": [Function],
+        "getTfootTdProps": [Function],
+        "getTfootTrProps": [Function],
+        "getTheadFilterProps": [Function],
+        "getTheadFilterThProps": [Function],
+        "getTheadFilterTrProps": [Function],
+        "getTheadGroupProps": [Function],
+        "getTheadGroupThProps": [Function],
+        "getTheadGroupTrProps": [Function],
+        "getTheadProps": [Function],
+        "getTheadThProps": [Function],
+        "getTheadTrProps": [Function],
+        "getTrGroupProps": [Function],
+        "getTrProps": [Function],
+        "groupedByPivotKey": "_groupedByPivot",
+        "indexKey": "_index",
+        "loading": false,
+        "loadingText": "Loading...",
+        "multiSort": true,
+        "nestingLevelKey": "_nestingLevel",
+        "nextText": "Next",
+        "noDataText": "No rows found",
+        "ofText": "of",
+        "onExpandedChange": undefined,
+        "onFetchData": [Function],
+        "onFilteredChange": undefined,
+        "onPageChange": undefined,
+        "onPageSizeChange": undefined,
+        "onResizedChange": undefined,
+        "onSortedChange": undefined,
+        "originalKey": "_original",
+        "pageJumpText": "jump to page",
+        "pageSizeOptions": Array [
+          5,
+          10,
+          20,
+          25,
+          50,
+          100,
+        ],
+        "pageText": "Page",
+        "pivotBy": undefined,
+        "pivotDefaults": Object {},
+        "pivotIDKey": "_pivotID",
+        "pivotValKey": "_pivotVal",
+        "previousText": "Previous",
+        "resizable": true,
+        "resolveData": [Function],
+        "rowsSelectorText": "rows per page",
+        "rowsText": "rows",
+        "showPageJump": true,
+        "showPageSizeOptions": true,
+        "showPagination": true,
+        "showPaginationBottom": true,
+        "showPaginationTop": false,
+        "sortable": true,
+        "style": Object {},
+        "subRowsKey": "_subRows",
+      },
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <ReactTable
+          AggregatedComponent={[Function]}
+          ExpanderComponent={[Function]}
+          FilterComponent={[Function]}
+          LoadingComponent={[Function]}
+          NoDataComponent={[Function]}
+          PadRowComponent={[Function]}
+          PaginationComponent={[Function]}
+          PivotValueComponent={[Function]}
+          ResizerComponent={[Function]}
+          TableComponent={[Function]}
+          TbodyComponent={[Function]}
+          TdComponent={[Function]}
+          TfootComponent={[Function]}
+          ThComponent={[Function]}
+          TheadComponent={[Function]}
+          TrComponent={[Function]}
+          TrGroupComponent={[Function]}
+          aggregatedKey="_aggregated"
+          className="-striped -highlight"
+          collapseOnDataChange={true}
+          collapseOnPageChange={true}
+          collapseOnSortingChange={true}
+          column={
+            Object {
+              "Aggregated": undefined,
+              "Cell": undefined,
+              "Expander": undefined,
+              "Filter": undefined,
+              "Footer": undefined,
+              "Header": undefined,
+              "Pivot": undefined,
+              "PivotValue": undefined,
+              "Placeholder": undefined,
+              "aggregate": undefined,
+              "className": "",
+              "filterAll": false,
+              "filterMethod": undefined,
+              "filterable": undefined,
+              "footerClassName": "",
+              "footerStyle": Object {},
+              "getFooterProps": [Function],
+              "getHeaderProps": [Function],
+              "getProps": [Function],
+              "headerClassName": "",
+              "headerStyle": Object {},
+              "minResizeWidth": 11,
+              "minWidth": 100,
+              "resizable": undefined,
+              "show": true,
+              "sortMethod": undefined,
+              "sortable": undefined,
+              "style": Object {},
+            }
+          }
+          columns={
+            Array [
+              Object {
+                "Header": "Penalty",
+                "columns": Array [
+                  Object {
+                    "Header": "Name",
+                    "accessor": "playerName",
+                  },
+                  Object {
+                    "Header": "Team Name",
+                    "accessor": "teamName",
+                  },
+                  Object {
+                    "Header": "Opponent",
+                    "accessor": "opponentTeam",
+                  },
+                  Object {
+                    "Header": "Game Date",
+                    "accessor": "gameDate",
+                  },
+                  Object {
+                    "Header": "Penalty",
+                    "accessor": "penalty",
+                  },
+                  Object {
+                    "Cell": [Function],
+                    "Header": "Location",
+                    "accessor": "homeAway",
+                  },
+                ],
+              },
+            ]
+          }
+          data={Array []}
+          defaultExpanded={Object {}}
+          defaultFilterMethod={[Function]}
+          defaultFiltered={Array []}
+          defaultPage={0}
+          defaultPageSize={10}
+          defaultResized={Array []}
+          defaultSortDesc={false}
+          defaultSortMethod={[Function]}
+          defaultSorted={Array []}
+          expanderDefaults={
+            Object {
+              "filterable": false,
+              "resizable": false,
+              "sortable": false,
+              "width": 35,
+            }
+          }
+          filterable={false}
+          freezeWhenExpanded={false}
+          getLoadingProps={[Function]}
+          getNoDataProps={[Function]}
+          getPaginationProps={[Function]}
+          getProps={[Function]}
+          getResizerProps={[Function]}
+          getTableProps={[Function]}
+          getTbodyProps={[Function]}
+          getTdProps={[Function]}
+          getTfootProps={[Function]}
+          getTfootTdProps={[Function]}
+          getTfootTrProps={[Function]}
+          getTheadFilterProps={[Function]}
+          getTheadFilterThProps={[Function]}
+          getTheadFilterTrProps={[Function]}
+          getTheadGroupProps={[Function]}
+          getTheadGroupThProps={[Function]}
+          getTheadGroupTrProps={[Function]}
+          getTheadProps={[Function]}
+          getTheadThProps={[Function]}
+          getTheadTrProps={[Function]}
+          getTrGroupProps={[Function]}
+          getTrProps={[Function]}
+          groupedByPivotKey="_groupedByPivot"
+          indexKey="_index"
+          loading={false}
+          loadingText="Loading..."
+          multiSort={true}
+          nestingLevelKey="_nestingLevel"
+          nextText="Next"
+          noDataText="No rows found"
+          ofText="of"
+          onFetchData={[Function]}
+          originalKey="_original"
+          pageJumpText="jump to page"
+          pageSizeOptions={
+            Array [
+              5,
+              10,
+              20,
+              25,
+              50,
+              100,
+            ]
+          }
+          pageText="Page"
+          pivotDefaults={Object {}}
+          pivotIDKey="_pivotID"
+          pivotValKey="_pivotVal"
+          previousText="Previous"
+          resizable={true}
+          resolveData={[Function]}
+          rowsSelectorText="rows per page"
+          rowsText="rows"
+          showPageJump={true}
+          showPageSizeOptions={true}
+          showPagination={true}
+          showPaginationBottom={true}
+          showPaginationTop={false}
+          sortable={true}
+          style={Object {}}
+          subRowsKey="_subRows"
+        />,
+        "className": "content-container",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "AggregatedComponent": [Function],
+          "ExpanderComponent": [Function],
+          "FilterComponent": [Function],
+          "LoadingComponent": [Function],
+          "NextComponent": undefined,
+          "NoDataComponent": [Function],
+          "PadRowComponent": [Function],
+          "PaginationComponent": [Function],
+          "PivotComponent": undefined,
+          "PivotValueComponent": [Function],
+          "PreviousComponent": undefined,
+          "ResizerComponent": [Function],
+          "TableComponent": [Function],
+          "TbodyComponent": [Function],
+          "TdComponent": [Function],
+          "TfootComponent": [Function],
+          "ThComponent": [Function],
+          "TheadComponent": [Function],
+          "TrComponent": [Function],
+          "TrGroupComponent": [Function],
+          "aggregatedKey": "_aggregated",
+          "className": "-striped -highlight",
+          "collapseOnDataChange": true,
+          "collapseOnPageChange": true,
+          "collapseOnSortingChange": true,
+          "column": Object {
+            "Aggregated": undefined,
+            "Cell": undefined,
+            "Expander": undefined,
+            "Filter": undefined,
+            "Footer": undefined,
+            "Header": undefined,
+            "Pivot": undefined,
+            "PivotValue": undefined,
+            "Placeholder": undefined,
+            "aggregate": undefined,
+            "className": "",
+            "filterAll": false,
+            "filterMethod": undefined,
+            "filterable": undefined,
+            "footerClassName": "",
+            "footerStyle": Object {},
+            "getFooterProps": [Function],
+            "getHeaderProps": [Function],
+            "getProps": [Function],
+            "headerClassName": "",
+            "headerStyle": Object {},
+            "minResizeWidth": 11,
+            "minWidth": 100,
+            "resizable": undefined,
+            "show": true,
+            "sortMethod": undefined,
+            "sortable": undefined,
+            "style": Object {},
+          },
+          "columns": Array [
+            Object {
+              "Header": "Penalty",
+              "columns": Array [
+                Object {
+                  "Header": "Name",
+                  "accessor": "playerName",
+                },
+                Object {
+                  "Header": "Team Name",
+                  "accessor": "teamName",
+                },
+                Object {
+                  "Header": "Opponent",
+                  "accessor": "opponentTeam",
+                },
+                Object {
+                  "Header": "Game Date",
+                  "accessor": "gameDate",
+                },
+                Object {
+                  "Header": "Penalty",
+                  "accessor": "penalty",
+                },
+                Object {
+                  "Cell": [Function],
+                  "Header": "Location",
+                  "accessor": "homeAway",
+                },
+              ],
+            },
+          ],
+          "data": Array [],
+          "defaultExpanded": Object {},
+          "defaultFilterMethod": [Function],
+          "defaultFiltered": Array [],
+          "defaultPage": 0,
+          "defaultPageSize": 10,
+          "defaultResized": Array [],
+          "defaultSortDesc": false,
+          "defaultSortMethod": [Function],
+          "defaultSorted": Array [],
+          "expanderDefaults": Object {
+            "filterable": false,
+            "resizable": false,
+            "sortable": false,
+            "width": 35,
+          },
+          "filterable": false,
+          "freezeWhenExpanded": false,
+          "getLoadingProps": [Function],
+          "getNoDataProps": [Function],
+          "getPaginationProps": [Function],
+          "getProps": [Function],
+          "getResizerProps": [Function],
+          "getTableProps": [Function],
+          "getTbodyProps": [Function],
+          "getTdProps": [Function],
+          "getTfootProps": [Function],
+          "getTfootTdProps": [Function],
+          "getTfootTrProps": [Function],
+          "getTheadFilterProps": [Function],
+          "getTheadFilterThProps": [Function],
+          "getTheadFilterTrProps": [Function],
+          "getTheadGroupProps": [Function],
+          "getTheadGroupThProps": [Function],
+          "getTheadGroupTrProps": [Function],
+          "getTheadProps": [Function],
+          "getTheadThProps": [Function],
+          "getTheadTrProps": [Function],
+          "getTrGroupProps": [Function],
+          "getTrProps": [Function],
+          "groupedByPivotKey": "_groupedByPivot",
+          "indexKey": "_index",
+          "loading": false,
+          "loadingText": "Loading...",
+          "multiSort": true,
+          "nestingLevelKey": "_nestingLevel",
+          "nextText": "Next",
+          "noDataText": "No rows found",
+          "ofText": "of",
+          "onExpandedChange": undefined,
+          "onFetchData": [Function],
+          "onFilteredChange": undefined,
+          "onPageChange": undefined,
+          "onPageSizeChange": undefined,
+          "onResizedChange": undefined,
+          "onSortedChange": undefined,
+          "originalKey": "_original",
+          "pageJumpText": "jump to page",
+          "pageSizeOptions": Array [
+            5,
+            10,
+            20,
+            25,
+            50,
+            100,
+          ],
+          "pageText": "Page",
+          "pivotBy": undefined,
+          "pivotDefaults": Object {},
+          "pivotIDKey": "_pivotID",
+          "pivotValKey": "_pivotVal",
+          "previousText": "Previous",
+          "resizable": true,
+          "resolveData": [Function],
+          "rowsSelectorText": "rows per page",
+          "rowsText": "rows",
+          "showPageJump": true,
+          "showPageSizeOptions": true,
+          "showPagination": true,
+          "showPaginationBottom": true,
+          "showPaginationTop": false,
+          "sortable": true,
+          "style": Object {},
+          "subRowsKey": "_subRows",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

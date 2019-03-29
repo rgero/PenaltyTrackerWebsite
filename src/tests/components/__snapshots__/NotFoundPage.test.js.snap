@@ -1,0 +1,272 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Not Found rendering 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <NotFoundPage />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Header />,
+        <div
+          className="content-container"
+        >
+          <div
+            className="content-container__title"
+          >
+            Page Not Found
+          </div>
+          <div>
+            The page you are trying to access does not exist, please return 
+            <Link
+              replace={false}
+              to="/"
+            >
+              home
+            </Link>
+          </div>
+        </div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="content-container__title"
+            >
+              Page Not Found
+            </div>,
+            <div>
+              The page you are trying to access does not exist, please return 
+              <Link
+                replace={false}
+                to="/"
+              >
+                home
+              </Link>
+            </div>,
+          ],
+          "className": "content-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Page Not Found",
+              "className": "content-container__title",
+            },
+            "ref": null,
+            "rendered": "Page Not Found",
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "The page you are trying to access does not exist, please return ",
+                <Link
+                  replace={false}
+                  to="/"
+                >
+                  home
+                </Link>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "The page you are trying to access does not exist, please return ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "home",
+                  "replace": false,
+                  "to": "/",
+                },
+                "ref": null,
+                "rendered": "home",
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Header />,
+          <div
+            className="content-container"
+          >
+            <div
+              className="content-container__title"
+            >
+              Page Not Found
+            </div>
+            <div>
+              The page you are trying to access does not exist, please return 
+              <Link
+                replace={false}
+                to="/"
+              >
+                home
+              </Link>
+            </div>
+          </div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="content-container__title"
+              >
+                Page Not Found
+              </div>,
+              <div>
+                The page you are trying to access does not exist, please return 
+                <Link
+                  replace={false}
+                  to="/"
+                >
+                  home
+                </Link>
+              </div>,
+            ],
+            "className": "content-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Page Not Found",
+                "className": "content-container__title",
+              },
+              "ref": null,
+              "rendered": "Page Not Found",
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "The page you are trying to access does not exist, please return ",
+                  <Link
+                    replace={false}
+                    to="/"
+                  >
+                    home
+                  </Link>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "The page you are trying to access does not exist, please return ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "home",
+                    "replace": false,
+                    "to": "/",
+                  },
+                  "ref": null,
+                  "rendered": "home",
+                  "type": [Function],
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
