@@ -1,5 +1,6 @@
 import React from 'react'
 import {shallow} from 'enzyme'
+import moment from 'moment';
 import SearchForm from '../../components/SearchForm';
 
 test("Search Form Rendering Test", ()=>{
@@ -39,10 +40,83 @@ test("Changing the season", ()=> {
 //     var selectTeams = ["ANA"];
 //     expect(selectObj.length).toBe(4);
 //     const testElem = selectObj.at(1);
-//     testElem.simulate('change', {
-//         target: {
-//             key: "player",
-//             options: [{ key: "ANA", id: "ANA", selected: true}]}
-//     })
+//     const testObj = testElem.find('option[value="ANA"]');
+//     expect(testObj.length).toBe(1);
+//     testElem.simulate('change', { value: [testObj] })
 //     expect(wrapper.state('teams')).toBe(selectTeams);
 // })
+
+test("Changing the Home/Away status", ()=> {
+    const wrapper = shallow(<SearchForm/>);
+    const selectObj = wrapper.find('select')
+    expect(selectObj.length).toBe(4);
+    const testElem = selectObj.at(3);
+    testElem.simulate('change', {
+        target: {value: "either"}
+    })
+    expect(wrapper.state('location')).toBe("either");
+
+    testElem.simulate('change', {
+        target: {value: "home"}
+    })
+    expect(wrapper.state('location')).toBe("home");
+
+    testElem.simulate('change', {
+        target: {value: "away"}
+    })
+    expect(wrapper.state('location')).toBe("away");
+})
+
+test("Start Date Change", ()=> {
+    const now = moment();
+    const wrapper = shallow(<SearchForm/>);
+    const datePickers = wrapper.find('withStyles(SingleDatePicker)');
+    expect(datePickers.length).toBe(2);
+    const testElem = datePickers.at(0);
+    testElem.prop("onDateChange")(now);
+    expect(wrapper.state('startDate')).toEqual(now);
+
+    now.add(5, "days");
+    testElem.prop("onDateChange")(now);
+    expect(wrapper.state('startDate')).toEqual(now);
+})
+
+test("End Date Change", ()=> {
+    const now = moment();
+    const wrapper = shallow(<SearchForm/>);
+    const datePickers = wrapper.find('withStyles(SingleDatePicker)');
+    expect(datePickers.length).toBe(2);
+    const testElem = datePickers.at(1);
+    testElem.prop("onDateChange")(now);
+    expect(wrapper.state('endDate')).toEqual(now);
+
+    now.add(5, "days");
+    testElem.prop("onDateChange")(now);
+    expect(wrapper.state('endDate')).toEqual(now);
+})
+
+// Player is the first input, Penalty is the second input
+test("Player Change", ()=>{
+    const testString = "Patrice is a cool dude";
+    const wrapper = shallow(<SearchForm/>);
+    const testInputFields = wrapper.find('input')
+    expect(testInputFields.length).toBe(2);
+    const testObj = testInputFields.at(0);
+    testObj.simulate('change', {
+        target: {value: testString}
+    })
+    expect(wrapper.state("players")).toBe(testString);
+})
+
+
+test("Penalty Change", ()=> {
+    const testString = "Fighting is a lot of money";
+    const wrapper = shallow(<SearchForm/>);
+    const testInputFields = wrapper.find('input')
+    expect(testInputFields.length).toBe(2);
+    const testObj = testInputFields.at(1);
+    testObj.simulate('change', {
+        target: {value: testString}
+    })
+    expect(wrapper.state("penalty")).toBe(testString);
+})
