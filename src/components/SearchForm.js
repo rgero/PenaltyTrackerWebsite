@@ -64,7 +64,7 @@ export class SearchForm extends React.Component {
         var values = [];
         for (var i = 0, l = options.length; i < l; i++) {
             if (options[i].selected) {
-            values.push(options[i].value);
+                values.push(options[i].value);
             }
         }
         if (key === "player"){
@@ -77,9 +77,7 @@ export class SearchForm extends React.Component {
             })
         }
     }
-
     
-
     onSeasonChange = (e) => {
         var season = e.target.value;
         this.setState({

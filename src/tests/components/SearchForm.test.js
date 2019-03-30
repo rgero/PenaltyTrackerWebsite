@@ -34,17 +34,55 @@ test("Changing the season", ()=> {
     expect(wrapper.state('season')).toBe("Regular_18_19");
 })
 
-// test("Changing the player team", ()=> {
-//     const wrapper = shallow(<SearchForm/>);
-//     const selectObj = wrapper.find('select');
-//     var selectTeams = ["ANA"];
-//     expect(selectObj.length).toBe(4);
-//     const testElem = selectObj.at(1);
-//     const testObj = testElem.find('option[value="ANA"]');
-//     expect(testObj.length).toBe(1);
-//     testElem.simulate('change', { value: [testObj] })
-//     expect(wrapper.state('teams')).toBe(selectTeams);
-// })
+test("Changing the player team", ()=> {
+    const wrapper = shallow(<SearchForm/>);
+    const selectObj = wrapper.find('select');
+    var selectTeams = ["BOS", "COL"];
+    expect(selectObj.length).toBe(4);
+    const testElem = selectObj.at(1);
+    testElem.prop('onChange')(
+        {
+            target: {
+                options: [
+                    {
+                        value: "BOS", 
+                        selected: true
+                    },
+                    {
+                        value: "COL", 
+                        selected: true
+                    },
+                ]
+            }
+        }
+    );
+    expect(wrapper.state('teams')).toEqual(selectTeams);
+})
+
+test("Changing the opponent team", ()=> {
+    const wrapper = shallow(<SearchForm/>);
+    const selectObj = wrapper.find('select');
+    var selectTeams = ["NYR", "MTL"];
+    expect(selectObj.length).toBe(4);
+    const testElem = selectObj.at(2);
+    testElem.prop('onChange')(
+        {
+            target: {
+                options: [
+                    {
+                        value: "NYR", 
+                        selected: true
+                    },
+                    {
+                        value: "MTL", 
+                        selected: true
+                    },
+                ]
+            }
+        }
+    );
+    expect(wrapper.state('opponents')).toEqual(selectTeams);
+})
 
 test("Changing the Home/Away status", ()=> {
     const wrapper = shallow(<SearchForm/>);
